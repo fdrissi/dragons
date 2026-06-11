@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #fafafa;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 1.4rem;
+}
+
+h2 {
+  font-size: 1.1rem;
+}
+
+button {
+  font: inherit;
+  padding: 0.3rem 0.9rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  background: #fff;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #eee;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.stats {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  background: #fff;
+}
+
+.stats div {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.stats dt {
+  font-weight: 600;
+}
+
+.stats dt::after {
+  content: ':';
+}
+
+.stats dd {
+  margin: 0;
+}
+
+.message {
+  padding: 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-left: 3px solid #666;
+  background: #fff;
+}
+
+.columns {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 800px) {
+  .columns {
+    grid-template-columns: 2fr 1fr;
+    align-items: start;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  background: #fff;
+  margin-bottom: 0.75rem;
+}
+
+li p {
+  margin: 0 0 0.5rem;
+}
+
+.details {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.best-pick {
+  color: #2e7d32;
+}
+
+.chance-high {
+  color: #2e7d32;
+}
+
+.chance-mid {
+  color: #b26a00;
+}
+
+.chance-low {
+  color: #c62828;
+}
