@@ -1,0 +1,17 @@
+{
+  "name": "dragonsofmugloar",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm -r --parallel run dev",
+    "dev:backend": "pnpm -F backend dev",
+    "dev:frontend": "pnpm -F frontend dev",
+    "build": "pnpm -r run build",
+    "test": "pnpm -F backend test",
+    "bot:run": "pnpm -F backend bot:run"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "packageManager": "pnpm@9.1.4"
+}
